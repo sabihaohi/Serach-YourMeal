@@ -61,8 +61,6 @@ const displaySpecificCtageoris= specificcategories =>{
 }
 
 
-
-
 //searchfood
 const searchfood = () =>{
     const searchfield = document.getElementById('seachField');
@@ -110,6 +108,7 @@ const loadMealDetail =(mealId)=>{
 }
 
 const displayMealDetail = meal =>{
+    console.log(meal);
      //clear specific category food
     const specificcategory = document.getElementById('specificcategory');
     specificcategory.innerHTML='';
@@ -128,6 +127,7 @@ const displayMealDetail = meal =>{
         <div class="card-body">
             <h5>${meal.strMeal}</h5>
             <p>${meal.strInstructions}.</p>
+            <button onclick=${meal.strSource} class="bg-success p-2">Check out the video</button>
         </div>
     `;
     mealdetails.appendChild(div);
